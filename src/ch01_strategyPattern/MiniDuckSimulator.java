@@ -1,5 +1,7 @@
 package ch01_strategyPattern;
 
+import ch01_strategyPattern.Duck.MallardDuck;
+import ch01_strategyPattern.Duck.ModelDuck;
 import ch01_strategyPattern.FlyBehavior.FlyRocketPowered;
 
 public class MiniDuckSimulator {

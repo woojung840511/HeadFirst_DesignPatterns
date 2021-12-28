@@ -1,4 +1,4 @@
-package ch01_strategyPattern;
+package ch01_strategyPattern.Duck;
 
 import ch01_strategyPattern.FlyBehavior.FlyWithWings;
 import ch01_strategyPattern.QuackBehavior.Quack;
