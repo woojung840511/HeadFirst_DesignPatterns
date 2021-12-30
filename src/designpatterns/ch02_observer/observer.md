@@ -5,4 +5,14 @@
 
 옵저버 패턴을 구현하는 방법에는 여러 가지가 있지만, 대부분(Subject)인터페이스와 옵저버(Observer)인터페이스가 들어있는 클래스 디자인을 바탕으로 합니다.
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCJNrRRkyiwh5HgvLHv3BMT%2FObserver%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+## 핵심 정리
+- 옵저버 패턴에서는 객체들 사이에 일대다 관계를 정의합니다.
+- 주제(Subject), 또는 Observable 객체는 동일한 인터페이스를 써서 옵저버에 연락을 합니다. 
+- Observable에서는 옵저버들이 동일한 인터페이스를 구현한다는 것을 제외하면 옵저버에 대해 전혀 모르기 때문에 이들 사이의 결합은 느슨한 결합입니다.
+- 옵저버 패턴을 이용하면 
+  - 주제 객체에서 데이터를 보내거나 (푸시 방식)
+  - 옵저버가 데이터를 가져오는 (풀 방식)을 쓸 수 있습니다. 
+  - 풀 방식이 더 옳은 것으로 간주됩니다.
+- 옵저버들한테 연락을 돌리는 순서에 절대로 의존하면 안 됩니다.
+- 자바에는 범용으로 쓸 수 있는 java.util.Observable을 비롯하여 옵저버 패턴을 구현한 것들이 여럿 있습니다.
+- 스윙 및 여러 GUI 프레임워크에서 옵저버 패턴이 많이 쓰입니다.
